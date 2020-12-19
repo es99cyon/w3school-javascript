@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>for 문 또한 마찬가지로 true 인경우 해당 수만큼 반복한다.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var text = "";
+  var i;
+  for (i = 0; i < 5; i++) {
+    text += "The number is " + i + "<br>";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
+
+
+var text = ""
+var i;
+
+for (i = 0, i < 5; i++) {
+    text += "The Number is" + i + "<br>"; 
+}

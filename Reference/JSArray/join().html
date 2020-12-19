@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join</title>
+</head>
+<body>
+    <h2>join 메서드는 배열을 문자열로 변환 해준다.</h2>
+    <button onclick="myFunction()">확인</button>
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var fruits = ["Banana", "Orange"];
+            var x = document.getElementById("demo");
+            x.innerHTML = fruits.join();
+        }
+    </script>
+</body>
+</html>

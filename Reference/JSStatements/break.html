@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>break 문을 선언하면 해당 조건이 같아 질때 종료된다.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p다 id="demo"></p다
+
+<script>
+function myFunction() {
+  var text = ""
+
+  for (i = 0; i < 5; i++) {
+    if (i === 3) {
+      break;
+    }
+    text += "The number is " + i + "<br>";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

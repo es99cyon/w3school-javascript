@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isArray</title>
+</head>
+<body>
+    <h2>isArray 메서드는 객체가 배열이 맞는지 아닌지를 확인해준다.</h2>
+    <button onclick="myFunction()">확인</button>
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var fruits = ["Banana", "Orange"];
+            var x = document.getElementById("demo");
+            x.innerHTML = Array.isArray(fruits);
+        }
+    </script>
+</body>
+</html>

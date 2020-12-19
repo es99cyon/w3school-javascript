@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>조건이 참이면 위에 조건을 실행, 그게 아니라면 아랫쪽 조건을 실행한다.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var time = new Date().getHours();
+  if (time < 20) {
+    document.getElementById("demo").innerHTML = "Good day";
+  }
+}
+</script>
+
+</body>
+</html>

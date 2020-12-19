@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>날짜 문자열을 구문 분석하고 날짜 문자열과 1970년 1월 1일 자정 사이의 밀리 초 수를 반환한다.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var d = Date.parse("March 21, 2012");
+  document.getElementById("demo").innerHTML = d;
+}
+</script>
+
+</body>
+</html>

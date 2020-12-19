@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fill</title>
+</head>
+<body>
+    <h2>fill() 메서드는 배열의 시작 인덱스부터 끝 인덱스의 이전까지 정적인 값 하나로 채웁니다.</h2>
+    <button onclick="myFunction()">button</button>
+    <p id="demo"></p>
+    <script>
+        var fruits = [ "Apple", "Orange", "Mango"];
+        document.getElementById("demo").innerHTML = fruits;
+
+        function myFunction() {
+            document.getElementById("demo").innnerHTML = fruits.fill("Banana");
+        }
+    </script>
+</body>
+</html>

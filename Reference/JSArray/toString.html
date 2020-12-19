@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toString</title>
+</head>
+<body>
+    <h2>tostring 이란 string, 문자열, flase 나 true를 리턴.</h2>
+    <button onclick=myFunction()>클릭클릭</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            var bool = true;
+            var x = bool.toString()
+            document.getElementById("demo").innerHTML = typeof x;
+        }
+    </script>
+</body>
+</html>

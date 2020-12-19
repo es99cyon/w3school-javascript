@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>배열 끝에 새 항목을 추가하고 새 길이를 반환한다. </p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+  fruits.push("Kiwi");
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>

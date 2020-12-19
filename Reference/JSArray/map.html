@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>이 map()메소드는 모든 배열 요소에 대해 함수를 호출 한 결과로 새 배열을 작성합니다.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var numbers = [4, 9, 16, 25];
+
+function myFunction() {
+  x = document.getElementById("demo")
+  x.innerHTML = numbers.map(Math.sqrt);
+}
+</script>
+
+</body>
+</html>

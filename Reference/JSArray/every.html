@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>every</title>
+</head>
+<body>
+    <h2>every() 메서드는 배열 안의 모든 요소가 주어진 판별 함수를 통과하는지 테스트</h2>
+    <button onclick="myFunction()">클릭</button>
+    <p id="demo"></p>
+    <script>
+        var ages = [20, 21 , 18 ,23];
+        
+        function checkAdult(age) {
+            return age >= 18;
+        }
+
+        function myFunction() {
+            document.getElementById("demo").innerHTML = ages.every(checkAdult);
+        }
+    </script>
+</body>
+</html>

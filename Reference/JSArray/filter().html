@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+</head>
+<body>
+    <h2>배열에서 이상인 모든 값의 배열을 반환합니다 .</h2>
+    <button onclick="myFunction()">click</button>
+    <p id="demo"></p>
+    <script>
+        var ages = [19, 20 , 21 ,22];
+        
+        function checkAdult(age) {
+            return age >= 18;
+        }
+
+        function myFunction() {
+            document.getElementById("demo").innerHTML = ages.filter(checkAdult);
+        }
+    </script>
+</body>
+</html>

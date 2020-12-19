@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>continue 문은 지정된 조건이 발생 시 루프에서 하나의 반복을 중단하고 루프에서 다음 반복을 계속한다.</p>
+
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var text = "";
+  var i;
+  for (i = 0; i < 5; i++) {
+    if (i === 3) {
+      continue;
+    }
+    text += "The number is " + i + "<br>";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

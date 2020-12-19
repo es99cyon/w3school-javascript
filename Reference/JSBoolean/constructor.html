@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>객체의 생성자 함수를 반환한다.</p>
+
+<p id="demo"></p>
+
+<script>
+var bool = false;
+document.getElementById("demo").innerHTML = bool.constructor;
+</script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>constructor을 활용한다.</h2>
+
+
+
+<p id="demo"></p>
+
+<script>
+class Car {
+  constructor(brand) {
+    this.carname = brand;
+  }
+}
+
+mycar = new Car("Ford");
+
+document.getElementById("demo").innerHTML = mycar.carname;
+</script>
+
+</body>
+</html>

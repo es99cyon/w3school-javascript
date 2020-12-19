@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>shift() 메서드는 배열의 첫번째 항목을 제거한다.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+  fruits.shift();
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find</title>
+</head>
+<body>
+    <h2>배열에서 이상의 값을 가진 첫 번째 요소의 값을 가져옵니다.</h2>
+    <button onclick="myFunction()">button</button>
+    <p id="demo"></p>
+<script>
+    var ages = [17, 24, 20 , 21]
+    
+    function checkAdult(age) {
+        return age >= 18;
+    }
+
+    function myFunction() {
+        document.getElementById("demo").innerHTML = ages.find(checkAdult);
+    }
+</script>
+
+</body>
+</html>

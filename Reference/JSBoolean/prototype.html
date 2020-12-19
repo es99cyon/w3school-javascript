@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boolean</title>
+</head>
+<body>
+    <h2>객체의 원시값을 나타내는 문자열</h2>
+    <button onclick="myFunction()">눌렁</button>
+    <p id="demo"></p>
+    <script>
+        Boolean.prototype.myColor = function() {
+            if(this.valueOf() == true) {
+                return "blue";
+            }   else    {
+                return "green";
+            }
+        };
+        
+        function myFunction() {
+            var a = true;
+            document.getElementById("demo").innerHTML = a.myColor();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>디코더란 디지털 신호를 음성 또는 영상 신호로 변환한다.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var uri = "my test.asp?name=ståle&car=saab";
+  var enc = encodeURI(uri);
+  var dec = decodeURI(enc);
+  var res = "Encoded URI: " + enc + "<br>" + "Decoded URI: " + dec;
+  document.getElementById("demo").innerHTML = res;
+}
+</script>
+
+</body>
+</html>

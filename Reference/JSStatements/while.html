@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>한 번이상 반복해야 할 때 true인 경우 사용한다.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var text = ""
+  var i = 0;
+  do {
+    text += "<br>The number is " + i;
+    i++;
+  }
+  while (i < 5);
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

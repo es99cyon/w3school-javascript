@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>지정된 항복에 대한 배열을 검색하고 해당 위치에 것을 반환 해준다.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var fruits = ["Banana", "Orange", "Apple", "Mango"];
+  var a = fruits.lastIndexOf("Orange");
+  var x = document.getElementById("demo");
+  x.innerHTML = a;
+}
+</script>
+
+<p><b>Note:</b>The lastIndexOf method was introduced in JavaScript 1.6, and does not work in Internet Explorer 8 and earlier versions.</p>
+
+</body>

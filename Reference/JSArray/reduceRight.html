@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p></p>
+
+<p id="demo">하나의 값으로 상기 어레이를 감소시킨다.</p>
+
+<script>
+var numbers = [175, 50, 25];
+
+document.getElementById("demo").innerHTML = numbers.reduceRight(myFunc);
+
+function myFunc(total, num) {
+  return total - num;
+}
+</script>
+
+</body>
+</html>

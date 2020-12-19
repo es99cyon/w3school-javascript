@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>UTC 시간과 로컬 시간의 시차를 분 단위로 리턴한다.</p>
+<p>예를 들어 시간대가 GMT +2 인 경우 -120이 반환된다.</p>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var d = new Date();
+  var n = d.getTimezoneOffset();
+  document.getElementById("demo").innerHTML = n;
+}
+</script>
+
+</body>
+</html>

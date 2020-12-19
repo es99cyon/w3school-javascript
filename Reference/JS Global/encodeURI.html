@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>URI를 인코딩하는데 사용한다.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var uri = "my test.asp?name=ståle&car=saab";
+  var res = encodeURI(uri);
+  document.getElementById("demo").innerHTML = res;
+}
+</script>
+
+</body>
+</html>

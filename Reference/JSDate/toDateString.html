@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Date 객채의 날짜를 읽을 수 있는 문자열로 변환한다.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var d = new Date();
+  var n = d.toDateString();
+  document.getElementById("demo").innerHTML = n;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>정규식 값을 검색 후 지정된 값으로 바뀌는 새 문자열을 반환한다.</p>
+
+<p id="demo">Visit Microsoft!</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  var str = document.getElementById("demo").innerHTML; 
+  var res = str.replace("Microsoft", "W3Schools");
+  document.getElementById("demo").innerHTML = res;
+}
+</script>
+
+</body>
+</html>

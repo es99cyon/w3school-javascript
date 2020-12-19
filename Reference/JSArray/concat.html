@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>concat</title>
+</head>
+<body>
+<h2>두 배열을 합친다.</h2>
+<button onclick="myFunction()">버튼</button>
+<p id="demo"></p>
+<script>
+    function myFunction() {
+        var hyeji = [ "나미", "룰루"]
+        var jg = [ "리신", "엘리스", "자크"]
+        var team = hyeji.concat(jg);
+        document.getElementById("demo").innerHTML = team;
+    }
+</script>
+</body>
+</html>
